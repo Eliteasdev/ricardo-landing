@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout title="Lawyer">
+  <div class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- Encabezado -->
+    <header class="bg-blue-500 text-white py-[2px]"></header>
+
+    <!-- Contenido principal -->
+    <main
+      class="container mx-auto mt-4 flex justify-around items-center py-6 px-16"
+    >
+      <!-- ! Tu contenido principal aquí -->
+      <div class="gap-8 flex flex-col max-w-lg">
+        <h1 class="text-balance font-semibold text-7xl">Nunca dormimos</h1>
+        <p class="text-2xl">
+          Buscamos justicia para nuestros clientes. Cual sea tu situción, puedes
+          contar con nosotros.
+        </p>
+        <button
+          class="flex gap-1 items-center font-semibold text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4
+          max-w-[120px] focus:ring-blue-300 rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"
+            ></path>
+            <path d="M10 16h6"></path>
+            <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+            <path d="M4 8h3"></path>
+            <path d="M4 12h3"></path>
+            <path d="M4 16h3"></path>
+          </svg>
+           Contactar</button
+        >
+      </div>
+
+      <div>
+        <img
+          src="../../public/img/hero.jpg"
+          alt=""
+          class="border max-h-[480px] rounded-2xl"
+        />
+      </div>
+    </main>
+
+    <main
+      class="container mx-auto mt-4 flex justify-around items-center py-6 px-16 flex-col"
+    >
+      <h2 class="text-balance font-semibold text-5xl pb-6">
+        Nuestros servicios
+      </h2>
+      <div class="flex gap-2">
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-300 py-4">
+      <div class="container mx-auto">
+        <!-- Contenido de tu pie de página aquí -->
+      </div>
+    </footer>
+  </div>
+</Layout>
